@@ -24280,8 +24280,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="R37" library="standardparts" deviceset="RESISTOR" device=".1206" value="47k"/>
 <part name="SUPPLY22" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
 <part name="J15" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_07" device="LONGPADS" package3d_urn="urn:adsk.eagle:package:38135/1"/>
-<part name="GND52" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="SUPPLY20" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VCC" device=""/>
 <part name="J16" library="UltraLibrarianParts" deviceset="10103592-0001LF-EK" device=""/>
 <part name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="LONGPADS" package3d_urn="urn:adsk.eagle:package:38068/1"/>
 <part name="J17" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="LONGPADS" package3d_urn="urn:adsk.eagle:package:38068/1"/>
@@ -27482,12 +27480,6 @@ notch on the pad)</text>
 <attribute name="VALUE" x="177.8" y="56.134" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="177.8" y="79.248" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="GND52" gate="1" x="208.28" y="53.34" smashed="yes">
-<attribute name="VALUE" x="208.28" y="53.086" size="1.778" layer="96" align="top-center"/>
-</instance>
-<instance part="SUPPLY20" gate="G$1" x="208.28" y="81.28" smashed="yes">
-<attribute name="VALUE" x="208.28" y="84.074" size="1.778" layer="96" align="bottom-center"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -27584,10 +27576,9 @@ notch on the pad)</text>
 <wire x1="210.82" y1="121.92" x2="210.82" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J15" gate="G$1" pin="6"/>
-<wire x1="187.96" y1="73.66" x2="208.28" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="73.66" x2="208.28" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="GND52" gate="1" pin="GND"/>
+<pinref part="J15" gate="G$1" pin="5"/>
+<wire x1="187.96" y1="71.12" x2="190.5" y2="71.12" width="0.1524" layer="91"/>
+<label x="190.5" y="71.12" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -27638,10 +27629,9 @@ notch on the pad)</text>
 <pinref part="SUPPLY22" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="J15" gate="G$1" pin="7"/>
-<wire x1="187.96" y1="76.2" x2="208.28" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="76.2" x2="208.28" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="SUPPLY20" gate="G$1" pin="VCC"/>
+<pinref part="J15" gate="G$1" pin="3"/>
+<wire x1="187.96" y1="66.04" x2="190.5" y2="66.04" width="0.1524" layer="91"/>
+<label x="190.5" y="66.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SPI_MISO" class="0">
@@ -27656,9 +27646,9 @@ notch on the pad)</text>
 <pinref part="R34" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="J15" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="63.5" x2="190.5" y2="63.5" width="0.1524" layer="91"/>
-<label x="190.5" y="63.5" size="1.27" layer="95" xref="yes"/>
+<pinref part="J15" gate="G$1" pin="6"/>
+<wire x1="187.96" y1="73.66" x2="190.5" y2="73.66" width="0.1524" layer="91"/>
+<label x="190.5" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SPI_MOSI" class="0">
@@ -27673,9 +27663,9 @@ notch on the pad)</text>
 <wire x1="152.4" y1="121.92" x2="139.7" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J15" gate="G$1" pin="3"/>
-<wire x1="187.96" y1="66.04" x2="190.5" y2="66.04" width="0.1524" layer="91"/>
-<label x="190.5" y="66.04" size="1.27" layer="95" xref="yes"/>
+<pinref part="J15" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="63.5" x2="190.5" y2="63.5" width="0.1524" layer="91"/>
+<label x="190.5" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SPI_SS" class="0">
@@ -27690,9 +27680,9 @@ notch on the pad)</text>
 <wire x1="152.4" y1="129.54" x2="139.7" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J15" gate="G$1" pin="5"/>
-<wire x1="187.96" y1="71.12" x2="190.5" y2="71.12" width="0.1524" layer="91"/>
-<label x="190.5" y="71.12" size="1.27" layer="95" xref="yes"/>
+<pinref part="J15" gate="G$1" pin="1"/>
+<wire x1="187.96" y1="60.96" x2="190.5" y2="60.96" width="0.1524" layer="91"/>
+<label x="190.5" y="60.96" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SPI_SCLK" class="0">
@@ -27710,23 +27700,6 @@ notch on the pad)</text>
 <pinref part="J15" gate="G$1" pin="4"/>
 <wire x1="187.96" y1="68.58" x2="190.5" y2="68.58" width="0.1524" layer="91"/>
 <label x="190.5" y="68.58" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="CD" class="0">
-<segment>
-<pinref part="J14" gate="A" pin="CD"/>
-<wire x1="205.74" y1="129.54" x2="215.9" y2="129.54" width="0.1524" layer="91"/>
-<label x="218.44" y="129.54" size="1.27" layer="95" xref="yes"/>
-<wire x1="215.9" y1="129.54" x2="218.44" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="129.54" x2="215.9" y2="132.08" width="0.1524" layer="91"/>
-<junction x="215.9" y="129.54"/>
-<wire x1="215.9" y1="132.08" x2="228.6" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="R33" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="J15" gate="G$1" pin="1"/>
-<wire x1="187.96" y1="60.96" x2="190.5" y2="60.96" width="0.1524" layer="91"/>
-<label x="190.5" y="60.96" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="I2C_SCL" class="0">
@@ -27850,6 +27823,23 @@ notch on the pad)</text>
 <wire x1="124.46" y1="17.78" x2="129.54" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="17.78" x2="129.54" y2="27.94" width="0.1524" layer="91"/>
 <label x="129.54" y="27.94" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SPI_CD" class="0">
+<segment>
+<pinref part="J14" gate="A" pin="CD"/>
+<wire x1="205.74" y1="129.54" x2="215.9" y2="129.54" width="0.1524" layer="91"/>
+<label x="218.44" y="129.54" size="1.27" layer="95" xref="yes"/>
+<wire x1="215.9" y1="129.54" x2="218.44" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="129.54" x2="215.9" y2="132.08" width="0.1524" layer="91"/>
+<junction x="215.9" y="129.54"/>
+<wire x1="215.9" y1="132.08" x2="228.6" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="R33" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="J15" gate="G$1" pin="7"/>
+<wire x1="187.96" y1="76.2" x2="190.5" y2="76.2" width="0.1524" layer="91"/>
+<label x="190.5" y="76.2" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
