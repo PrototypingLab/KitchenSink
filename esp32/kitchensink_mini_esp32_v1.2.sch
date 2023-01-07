@@ -20361,6 +20361,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="D6" library="standardparts" deviceset="LED" device=".1206"/>
 <part name="R12" library="standardparts" deviceset="RESISTOR" device=".1206" value="1K"/>
 <part name="GND17" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
+<part name="GND6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21400,9 +21401,9 @@ Max Vin = 26 V</text>
 <attribute name="NAME" x="78.7361" y="64.7779" size="1.77938125" layer="95"/>
 <attribute name="VALUE" x="78.7386" y="50.7973" size="1.77848125" layer="96"/>
 </instance>
-<instance part="C21" gate="G$1" x="66.04" y="60.96" smashed="yes">
-<attribute name="NAME" x="64.77" y="62.865" size="1.016" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="67.31" y="62.865" size="1.016" layer="96" rot="R90"/>
+<instance part="C21" gate="G$1" x="66.04" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="64.135" y="52.07" size="1.016" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="64.135" y="54.61" size="1.016" layer="96" rot="R180"/>
 </instance>
 <instance part="C22" gate="G$1" x="119.38" y="55.88" smashed="yes" rot="R90">
 <attribute name="NAME" x="117.475" y="54.61" size="1.016" layer="95" rot="MR0"/>
@@ -21432,6 +21433,9 @@ Max Vin = 26 V</text>
 </instance>
 <instance part="TP67" gate="G$1" x="134.62" y="68.58" smashed="yes" rot="R90">
 <attribute name="NAME" x="137.16" y="66.04" size="1.778" layer="95" font="vector" rot="R90"/>
+</instance>
+<instance part="GND6" gate="1" x="66.04" y="40.64" smashed="yes">
+<attribute name="VALUE" x="66.04" y="40.386" size="1.778" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -21497,6 +21501,11 @@ Max Vin = 26 V</text>
 <pinref part="C23" gate="G$1" pin="-"/>
 <pinref part="GND62" gate="1" pin="GND"/>
 <wire x1="129.54" y1="48.26" x2="129.54" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C21" gate="G$1" pin="1"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="66.04" y1="50.8" x2="66.04" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V_USB" class="1">
@@ -21600,13 +21609,6 @@ Max Vin = 26 V</text>
 <label x="215.9" y="53.34" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="N$32" class="0">
-<segment>
-<pinref part="U9" gate="G$1" pin="IN"/>
-<pinref part="C21" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="60.96" x2="68.58" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="DC_JACK" class="1">
 <segment>
 <pinref part="J19" gate="G$1" pin="1"/>
@@ -21617,13 +21619,6 @@ Max Vin = 26 V</text>
 <wire x1="38.1" y1="60.96" x2="45.72" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="68.58" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
 <junction x="38.1" y="60.96"/>
-</segment>
-</net>
-<net name="N$43" class="0">
-<segment>
-<pinref part="C21" gate="G$1" pin="1"/>
-<pinref part="D14" gate="A" pin="1"/>
-<wire x1="55.88" y1="60.96" x2="63.5" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="1">
@@ -21656,6 +21651,17 @@ Max Vin = 26 V</text>
 <pinref part="TP26" gate="G$1" pin="1"/>
 <wire x1="147.32" y1="144.78" x2="147.32" y2="139.7" width="0.1524" layer="91"/>
 <junction x="147.32" y="139.7"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="D14" gate="A" pin="1"/>
+<pinref part="U9" gate="G$1" pin="IN"/>
+<wire x1="55.88" y1="60.96" x2="66.04" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="C21" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="60.96" x2="73.66" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="55.88" x2="66.04" y2="60.96" width="0.1524" layer="91"/>
+<junction x="66.04" y="60.96"/>
 </segment>
 </net>
 </nets>
