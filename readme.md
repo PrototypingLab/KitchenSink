@@ -2,6 +2,15 @@
 
 ## Kitchen Sink Mini - ESP32-WROOM
 
+### Future Ideas
+- Add transistor LED circuit for TX / RX
+- Add TVS diode protection circuit
+
+### v1.3 Changelog
+- Fixed series capacitor issue on voltage regulators
+- Updated power netclass to include RTC battery
+- Updated date on silkscreen, added version number
+
 ### v1.2 Changelog
 - Added solder bridges for selecting IO0 and EN from buttons or (USB-Serial IC and programming header)
 - Added 3 additional LEDs on pins designated for shift out
